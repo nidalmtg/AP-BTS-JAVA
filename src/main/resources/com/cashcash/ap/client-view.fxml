@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+
+<GridPane alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.cashcash.ap.ClientViewController"
+          styleClass="menu-cli">
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" spacing="8">
+        <padding>
+            <Insets topRightBottomLeft="20"/>
+        </padding>
+        <HBox alignment="CENTER">
+            <Label>Entrez le matricule du client :</Label>
+        </HBox>
+        <HBox alignment="CENTER">
+            <TextField fx:id="matriculeClient"/>
+        </HBox>
+        <HBox alignment="CENTER">
+            <Button text="Rechercher" onAction="#rechercheCli"/>
+        </HBox>
+    </VBox>
+
+
+    <VBox styleClass="box" GridPane.columnIndex="0" GridPane.rowIndex="1" spacing="8">
+        <padding>
+            <Insets topRightBottomLeft="20"/>
+        </padding>
+        <Label styleClass="box-title">Infos client :</Label>
+        <HBox alignment="center">
+            <Label fx:id="numCli"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="nomCli"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="raisonSociale"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="siren"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="codeApe"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="adresse"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="tel"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="email"/>
+        </HBox>
+    </VBox>
+
+    <VBox GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="box" spacing="8">
+        <Label styleClass="box-title">Contrat du client : </Label>
+        <HBox alignment="center">
+            <Label fx:id="numContrat"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="dateSignature"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="dateEcheance"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="typeContrat"/>
+        </HBox>
+        <HBox alignment="center">
+            <padding>
+                <Insets top="15"/>
+            </padding>
+            <Label fx:id="nbJoursRestant"/>
+        </HBox>
+        <HBox alignment="center">
+            <Button fx:id="btnNewContrat" onAction="#vueCreerContratCli" visible="false">Créer un contrat de maintenance</Button>
+        </HBox>
+        <HBox alignment="center">
+            <Button fx:id="btnRelance" onAction="#genererRelance" visible="false">Générer un courrier de relance</Button>
+        </HBox>
+    </VBox>
+
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="box" spacing="8">
+        <Label styleClass="box-title">Matériels sous contrat : </Label>
+        <HBox alignment="center">
+            <padding>
+                <Insets bottom="15"/>
+            </padding>
+            <Label text="Référence : "/>
+            <ComboBox fx:id="matSousContrat" onAction="#getMaterielSousContratInfo"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="dateVente"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="dateInst"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="prixVente"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="emplacement"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="codeTypeMat"/>
+        </HBox>
+    </VBox>
+
+    <VBox GridPane.columnIndex="1" GridPane.rowIndex="2" styleClass="box" spacing="8">
+        <Label styleClass="box-title">Matériels hors contrat : </Label>
+        <HBox alignment="center">
+            <padding>
+                <Insets bottom="15"/>
+            </padding>
+            <Label text="Référence : "/>
+            <ComboBox fx:id="matHorsContrat" onAction="#getMaterielHorsContratInfo"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="dateVenteHC"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="dateInstHC"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="prixVenteHC"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="emplacementHC"/>
+        </HBox>
+        <HBox alignment="center">
+            <Label fx:id="codeTypeMatHC"/>
+        </HBox>
+        <HBox alignment="center">
+            <padding>
+                <Insets top="15"/>
+            </padding>
+            <Button fx:id="btnAjtAuContrat" text="Ajouter au contrat" onAction="#ajouterAuContrat" visible="false"/>
+        </HBox>
+    </VBox>
+
+    <HBox alignment="center" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="2">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+        <Button fx:id="btnXml" text="Générer un récapitulatif au format XML" onAction="#genererXml" visible="false"/>
+    </HBox>
+
+</GridPane>

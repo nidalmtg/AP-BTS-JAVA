@@ -1,0 +1,34 @@
+<component name="libraryTable">
+  <library name="itextpdf.html2pdf" type="repository">
+    <properties maven-id="com.itextpdf:html2pdf:4.0.2" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/html2pdf-4.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/forms-7.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kernel-7.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/io-7.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-7.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcpkix-jdk15on-1.70.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcutil-jdk15on-1.70.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcprov-jdk15on-1.70.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/layout-7.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/svg-7.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/styled-xml-parser-7.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.36.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/html2pdf-4.0.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/forms-7.2.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kernel-7.2.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/io-7.2.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-7.2.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcpkix-jdk15on-1.70-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcutil-jdk15on-1.70-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcprov-jdk15on-1.70-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/layout-7.2.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/svg-7.2.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/styled-xml-parser-7.2.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.36-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

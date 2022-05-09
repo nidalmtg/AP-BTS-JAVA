@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<listeMateriel idClient="0">
+    <sousContrat>
+        <materiel numSerie="MAT0">
+            <type libelle="TypeMAT_Lib0" refInterne="TypeMAT0"/>
+            <date_vente>2022-04-21</date_vente>
+            <date_installation>2022-04-28</date_installation>
+            <prix_vente>54.99</prix_vente>
+            <emplacement>Hôpital</emplacement>
+            <nbJoursAvantEcheance>340</nbJoursAvantEcheance>
+        </materiel>
+        <materiel numSerie="MAT1">
+            <type libelle="TypeMAT_Lib1" refInterne="TypeMAT1"/>
+            <date_vente>2022-04-21</date_vente>
+            <date_installation>2022-04-28</date_installation>
+            <prix_vente>89.99</prix_vente>
+            <emplacement>Carrefour</emplacement>
+            <nbJoursAvantEcheance>340</nbJoursAvantEcheance>
+        </materiel>
+        <materiel numSerie="MAT2">
+            <type libelle="TypeMAT_Lib2" refInterne="TypeMAT2"/>
+            <date_vente>2022-04-07</date_vente>
+            <date_installation>2022-04-14</date_installation>
+            <prix_vente>29.99</prix_vente>
+            <emplacement>Superette</emplacement>
+            <nbJoursAvantEcheance>340</nbJoursAvantEcheance>
+        </materiel>
+    </sousContrat>
+    <horsContrat/>
+</listeMateriel>
